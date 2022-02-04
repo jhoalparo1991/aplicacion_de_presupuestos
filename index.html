@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="row">
+            <p class="card-title text-white">Presupuesto Disponible</p>
+            <p class="card-presupuesto text-white"><span>$</span><b class="dinero">3.0000</b></p>
+            <div class="card">
+                <div class="card-body card-ingresos text-white">
+                    <span class="text">Ingresos</span>  
+                    <span class="text-dinero">$1.000</span>  
+                </div>
+                <div class="card-body card-egresos text-white">
+                    <span class="text">Ingresos</span>  
+                    <span class="text-dinero">$1.000</span>  
+                </div>
+            </div>
+      </div>
+    </header>
+    <div class="container-fluid">
+        <form action="#" class="form" autocomplete="off">
+            <div class="form-group">
+                <div class="group-1">
+                    <select name="type" id="type" class="form-control type font">
+                        <option value="mas"> + </option>
+                        <option value="menos"> - </option>
+                    </select>
+                    <input type="text" name="description" id="description" class="form-control description font" placeholder="Agregar descripcion">
+                    <input type="text" name="money" id="money" class="form-control money font" placeholder="Valor">
+                </div>
+                <div class="group-2">
+                    <button class="btn btn-info"><i class="far fa-check-circle"></i> Agregar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="group">
+            <p class="group-title text-green">Ingresos</p>
+            <div class="group-content">
+                <span class="badge">Salario</span>
+                <span class="s1">+$2000</span>
+            </div>
+        </div>
+        <div class="group">
+            <p class="group-title text-orange">Egresos</p>
+            <div class="group-content">
+                <span class="badge">Salario</span>
+                <span class="s2">+$2000</span> 
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
