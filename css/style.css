@@ -47,6 +47,11 @@
 .card-egresos{
     background:var(--red-orange)
 }
+.derecha{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 .porcentaje{
     background: #ff8364fb;
     padding : 5px;
@@ -71,10 +76,18 @@
     letter-spacing: 2px;
 }
 
+.dinero-verde{
+    color: green;
+}
+.dinero-amarillo{
+    color: yellow;
+}
+
 .container-fluid{
     background : var(--light-gray);
     padding:20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--gray);
@@ -112,11 +125,16 @@ form{
     border: none;
     background: transparent;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn-info{
     background:#03a2adfb;
     color:#fff;
+}
+.btn-sm{
+    background: rgb(248, 78, 11);
+    color: white;
 }
 
 
@@ -168,6 +186,39 @@ form{
     font-weight: 700;
     font-size: 18px;
 }
+.egreso-porcentaje{
+    background : rgba(255, 164, 152, 0.788);
+    margin-left: 5px;
+    margin-right: 5px;
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.alert{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding:10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.alert-danger{
+    background: rgb(255, 186, 186);
+    border : 2px solid red;
+    color: red;
+}
+
+.alert-success{
+    background: rgb(193, 255, 229);
+    border : 2px solid green;
+    color: green;
+}
+
+
+
 @media(max-width:400px), (max-width:790px) {
     .header{
         height: 35vh;

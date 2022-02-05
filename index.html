@@ -13,53 +13,57 @@
     <header class="header">
       <div class="row">
             <p class="card-title text-white">Presupuesto Disponible</p>
-            <p class="card-presupuesto text-white"><span>$</span><b class="dinero">3.0000</b></p>
+            <p class="card-presupuesto text-white"><b class="dinero dinero-verde" id="dinero">3.0000</b></p>
             <div class="card">
                 <div class="card-body card-ingresos text-white">
                     <span class="text">Ingresos</span>  
-                    <span class="text-dinero">$1.000
+                    <span class="text-dinero" id="dinero-ingresos">$1.000
                         <span>&nbsp;</span>
                     </span>  
                 </div>
                 <div class="card-body card-egresos text-white">
-                    <span class="text">Ingresos</span>  
-                    <span class="text-dinero">$1.000 <span class="porcentaje">45%</span></span>  
+                    <span class="text">Egresos</span>  
+                    <div class="derecha">
+                        <span class="text-dinero" id="dinero-egreso">$1.000 </span>
+                    <span class="porcentaje" id="porcentaje-egreso">45%</span>  
+                    </div>
                 </div>
             </div>
       </div>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid" id="contenedor">
+     
         <form action="#" class="form" autocomplete="off">
             <div class="form-group">
                 <div class="group-1">
-                    <select name="type" id="type" class="form-control type font">
+                    <select name="type" id="tipo-presupuesto" class="form-control type font">
                         <option value="mas"> + </option>
                         <option value="menos"> - </option>
                     </select>
-                    <input type="text" name="description" id="description" class="form-control description font" placeholder="Agregar descripcion">
-                    <input type="text" name="money" id="money" class="form-control money font" placeholder="Valor">
+                    <input type="text" name="descripcion" id="descripcion" class="form-control description font" placeholder="Agregar descripcion">
+                    <input type="text" name="valor" id="valor" class="form-control money font" placeholder="Valor">
                 </div>
                 <div class="group-2">
-                    <button class="btn btn-info"><i class="far fa-check-circle"></i> Agregar</button>
+                    <button class="btn btn-info" id="agregar"><i class="far fa-check-circle"  ></i> Agregar</button>
                 </div>
             </div>
         </form>
     </div>
     <div class="container">
-        <div class="group">
+        <div class="group" id="group-ingresos">
             <p class="group-title text-green">Ingresos</p>
-            <div class="group-content">
-                <span class="badge">Salario</span>
-                <span class="s1">+$2000</span>
+            <div id="ingresos">
+
             </div>
         </div>
-        <div class="group">
+        <div class="group" id="group-egresos">
             <p class="group-title text-orange">Egresos</p>
-            <div class="group-content">
-                <span class="badge">Salario</span>
-                <span class="s2">+$2000</span> 
+            <div id="egresos">
+                
             </div>
+     
         </div>
     </div>
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>
